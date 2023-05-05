@@ -1,11 +1,11 @@
-%define snapshot 20220107
+#define snapshot 20220107
 
-Name:		bonsai
-Version:	0.0.1
+Name:		arca
+Version:	0.1.1
 Release:	%{?snapshot:0.%{snapshot}.}1
-Summary:	Git repository manager for Plasma Mobile
+Summary:	Maui Archiver for compressed files
 URL:    	https://mauikit.org
-Source0:	https://invent.kde.org/maui/%{name}/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/%{name}-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/%{name}-%{snapshot}.tar.bz2}
+Source0:	https://invent.kde.org/maui/arca/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/%{name}-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/%{name}-%{snapshot}.tar.bz2}
 License:	GPLv3
 Group:		Development/Tools
 BuildRequires:	cmake
@@ -18,6 +18,7 @@ BuildRequires:	cmake(Qt5Sql)
 BuildRequires:	cmake(Qt5Svg)
 BuildRequires:	cmake(Qt5QuickControls2)
 BuildRequires:	cmake(Qt5Xml)
+BuildRequires:  cmake(KF5Archive)
 BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5CoreAddons)
 BuildRequires:	cmake(MauiKit)
@@ -32,7 +33,7 @@ BuildRequires:	cmake(Qt5Quick)
 BuildRequires:	cmake(Qt5Widgets)
 
 %description
-Git repository manager for Plasma Mobile
+Maui Archiver for compressed files
 
 %prep
 %autosetup -p1 -n %{name}-%{?snapshot:master}%{!?snapshot:v%{version}}
