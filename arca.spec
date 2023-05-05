@@ -46,3 +46,7 @@ Maui Archiver for compressed files
 %ninja_install -C build
 
 %files
+%{_bindir}/arca
+%{_datadir}/applications/org.kde.arca.desktop
+%{_datadir}/metainfo/org.kde.arca.appdata.xml
+%{_iconsdir}/hicolor/scalable/apps/arca.svg
