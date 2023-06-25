@@ -1,7 +1,7 @@
 #define snapshot 20220107
 
 Name:		arca
-Version:	0.1.1
+Version:	0.5.0
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	Maui Archiver for compressed files
 URL:    	https://mauikit.org
