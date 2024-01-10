@@ -1,13 +1,13 @@
 #define snapshot 20220107
 
 Name:		arca
-Version:	0.5.0
+Version:	0.5.2
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	Maui Archiver for compressed files
 URL:    	https://mauikit.org
 Source0:	https://invent.kde.org/maui/arca/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/%{name}-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/%{name}-%{snapshot}.tar.bz2}
 License:	GPLv3
-Group:		Development/Tools
+Group:		Development/Tools/Maui
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
@@ -21,8 +21,8 @@ BuildRequires:	cmake(Qt5Xml)
 BuildRequires:  cmake(KF5Archive)
 BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5CoreAddons)
-BuildRequires:	cmake(MauiKit)
-BuildRequires:  cmake(MauiKitFileBrowsing)
+BuildRequires:	cmake(MauiKit3)
+BuildRequires:  cmake(MauiKitFileBrowsing3)
 BuildRequires:	gettext
 BuildRequires:	pkgconfig(libgit2)
 BuildRequires:	cmake(Qt5QuickCompiler)
